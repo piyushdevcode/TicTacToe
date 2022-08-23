@@ -1,0 +1,6 @@
+<!-- if empty block -->
+<button *ngIf="!value">{{value}}</button>
+<!-- if X is selected  -->
+<button class="cross" *ngIf="value ==='X'">{{value}}</button>
+<!-- if O is selected -->
+<button class="circle" *ngIf="value==='O'">{{value}}</button>

@@ -1,12 +1,20 @@
-
+<h2 *ngIf="winner">Player {{winner}} won the game</h2>
+<h2 *ngIf="winner === 'D'">It's a Draw Play Again</h2>
+<div class="helpers">
+    <div class="current-player" *ngIf="!winner">
+        Current Player - {{currentPlayer}}
+    </div>
+    <div class="newGame">
+        <button (click)="newGame()">Start a New Game</button>
+    </div>
+    <div class="toggle-theme">
+        <button>Dark Mode</button>
+    </div>
+</div>
 <div class="board">
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
+    <app-boxes 
+    *ngFor="let box of boxes; let i = index"
+    [value] = "box"
+    (click) = "doMove(i)"
+    ></app-boxes>
 </div>

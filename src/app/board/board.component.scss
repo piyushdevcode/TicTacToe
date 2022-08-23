@@ -7,7 +7,14 @@
     gap: 0;
 }
 
-.box{
+app-boxes {
     background-color: tomato;
     outline: 1px solid black;
+}
+
+.helpers{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .4rem;
+    width: 600px;
 }
