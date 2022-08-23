@@ -1,7 +1,4 @@
 .board{
-    background-color: rebeccapurple;
-    width: 600px;
-    height: 600px;
     display: grid;
     grid-template-columns: 200px 200px 200px;
     gap: 0;
@@ -9,6 +6,7 @@
 
 app-boxes {
     background-color: tomato;
+    height: 200px;
     outline: 1px solid black;
 }
 

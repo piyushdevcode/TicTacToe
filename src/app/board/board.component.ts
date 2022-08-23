@@ -26,7 +26,7 @@ export class BoardComponent implements OnInit {
     return this.xIsNext ? 'X' : 'O';
   }
   doMove(index: number){
-    if(!this.boxes[index]){
+    if(!this.boxes[index] && !this.winner){
       this.boxes.splice(index,1,this.currentPlayer);
       this.movesCount +=1;
       this.xIsNext = !this.xIsNext;
