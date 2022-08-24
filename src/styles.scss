@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Sniglet&display=swap');
+body {
+    font-family: Poppins, monospace, Arial, Helvetica, sans-serif;
+    // background-color: #1e3030;   
+    background: linear-gradient(167deg,#181919,#222121); 
+}
+.game-title{
+    width: 600px;
+    text-align: center;
+    color:azure;
+  }
+  h2.game-over-msg {
+    text-align: center;
+    background: gold;
+    width: 600px;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 5px 3px gold;
+}
+h2.game-over-msg span {
+    font-size: 1.2em;
+}

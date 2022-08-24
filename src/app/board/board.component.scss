@@ -5,14 +5,42 @@
 }
 
 app-boxes {
-    background-color: tomato;
+    // background-color: tomato;
     height: 200px;
-    outline: 1px solid black;
+    margin: .2rem;
+    border-bottom: 2px solid gold;
+    border-top: gold solid;
+    border-left: solid skyblue;
+    border-right: solid skyblue;
+    border-radius: 1.5rem;
 }
 
 .helpers{
     display: flex;
     justify-content: space-between;
-    margin-bottom: .4rem;
+    margin-bottom: .85rem;
     width: 600px;
+}
+.current-player, .newGame button{
+    background-color: black;
+    color: white;
+    padding: 0.75rem 0.5rem;
+    border-radius: 0.5rem;
+    border: solid .5px gold;
+}
+.currp{
+    font-weight: bold;
+    background: linear-gradient(89deg, #3fedf2, transparent);
+    padding: .2rem .5rem;
+    border-radius: .5rem;
+}
+.newGame button {
+    cursor: pointer;
+    border: .5px solid gold;
+    font: caption;
+    color: azure;
+    font-family: Poppins;
+}
+.newGame button:hover {
+    background: linear-gradient(80deg, rgb(0 220 240 / 84%),#f2ca3f);
 }

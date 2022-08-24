@@ -1,14 +1,11 @@
-<h2 *ngIf="winner">Player {{winner}} won the game</h2>
-<h2 *ngIf="winner === 'D'">It's a Draw Play Again</h2>
+<h2 class="game-over-msg"*ngIf="winner && winner != 'D'">Player with '<span>{{winner}}</span>' won the game</h2>
+<h2  class="game-over-msg" *ngIf="winner === 'D'">It's a Draw Play Again</h2>
 <div class="helpers">
     <div class="current-player" *ngIf="!winner">
-        Current Player - {{currentPlayer}}
+        Current Turn - <span class="currp" >{{currentPlayer}}</span>
     </div>
     <div class="newGame">
         <button (click)="newGame()">Start a New Game</button>
-    </div>
-    <div class="toggle-theme">
-        <button>Dark Mode</button>
     </div>
 </div>
 <div class="board">

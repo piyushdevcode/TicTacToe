@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ignoreElements } from 'rxjs';
 
 @Component({
   selector: 'app-board',
@@ -51,9 +52,12 @@ export class BoardComponent implements OnInit {
         this.boxes[idx1] && // check box is not NULL 
         this.boxes[idx1] === this.boxes[idx2] &&
         this.boxes[idx2] === this.boxes[idx3]
-      ){
+      ) {
         return this.boxes[idx1] ; // get the Winner's Symbol
       }
+    }
+    if(this.movesCount === 9) {
+      return 'D'
     }
     return null;
   }
