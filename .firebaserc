@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "tictactoeapp-b825d": {
+      "hosting": {
+        "myapp": [
+          "tictactoeapp-b825d"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "tictactoeapp-b825d"
+  }
+}

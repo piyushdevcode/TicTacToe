@@ -5,7 +5,7 @@
 }
 
 app-boxes {
-    // background-color: tomato;
+    background: linear-gradient(67deg, black, transparent);
     height: 200px;
     margin: .2rem;
     border-bottom: 2px solid gold;
@@ -13,6 +13,7 @@ app-boxes {
     border-left: solid skyblue;
     border-right: solid skyblue;
     border-radius: 1.5rem;
+    transition: ease-in-out 600ms;
 }
 
 .helpers{
@@ -43,4 +44,8 @@ app-boxes {
 }
 .newGame button:hover {
     background: linear-gradient(80deg, rgb(0 220 240 / 84%),#f2ca3f);
+}
+
+.winning-cells {
+    background: blueviolet;
 }

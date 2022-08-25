@@ -21,6 +21,7 @@ button{
     background: linear-gradient(90deg, gold, #b1af00);
     color: transparent;
     -webkit-background-clip: text;
+    background-clip: text;
     text-shadow: 5px -1px 5px rgb(240 166 0 / 87%);
 }
 

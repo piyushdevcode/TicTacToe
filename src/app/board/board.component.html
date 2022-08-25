@@ -8,10 +8,12 @@
         <button (click)="newGame()">Start a New Game</button>
     </div>
 </div>
-<div class="board">
+<div class="board" id="board">
     <app-boxes 
-    *ngFor="let box of boxes; let i = index"
-    [value] = "box"
+    *ngFor="let boxval of boxes; let i = index"
+    [value] = "boxval"
+    [id]="'alelo'+i.toString()"
+    
     (click) = "doMove(i)"
     ></app-boxes>
 </div>

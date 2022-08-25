@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Sniglet&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Sniglet&family=Poppins&display=swap');
 body {
     font-family: Poppins, monospace, Arial, Helvetica, sans-serif;
     // background-color: #1e3030;   
@@ -14,6 +14,7 @@ body {
     text-align: center;
     background: gold;
     width: 600px;
+    padding: .3rem 0;
     border-radius: 0.5rem;
     box-shadow: 2px 2px 5px 3px gold;
 }
